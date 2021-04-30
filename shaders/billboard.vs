@@ -15,5 +15,18 @@ void main()
 {
    color = uColor;
    uv = vPos.xy;
-   gl_Position = vec4(vPos, 1.0); 
+
+   vec3 shift = vec3(-0.5, -0.5, 0.0);
+   vec3 myPos = vPos + shift;
+   myPos.x *= uSize;
+   myPos.y *= uSize;
+   myPos.z *= uSize;
+   vec3 up = vec3(0.0, 1.0, 0.0);
+   vec3 r_z = normalize(uCameraPos - myPos);
+   vec3 r_x = normalize(cross(up, r_z));
+   vec3 r_y = normalize(cross(r_z, r_x));
+   mat3 rotation = mat3(r_x, r_y, r_z);
+   
+   gl_Position = uVP * vec4(((rotation * myPos) + uOffset), 1.0);
+
 }

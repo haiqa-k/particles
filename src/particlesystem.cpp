@@ -30,6 +30,13 @@ void ParticleSystem::init(int size)
    }
    createParticles(size);
 }
+void  ParticleSystem::startPos(vec3 pos) {
+    start_position = pos;
+}
+
+void  ParticleSystem::startCol(vec4 col) {
+    start_color = col;
+}
 
 void ParticleSystem::draw() 
 {
@@ -40,3 +47,4 @@ void ParticleSystem::draw()
       theRenderer.quad(particle.pos, particle.color, particle.size);
    }
 }
+
