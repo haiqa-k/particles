@@ -47,7 +47,10 @@ particles/build $ ../bin/demo
 
 ## Results
 
-![ezgif com-optimize](https://user-images.githubusercontent.com/79232961/116647938-df5c3180-a949-11eb-915f-6cd4ccb72b82.gif)
+<img width="499" alt="Screen Shot 2021-04-30 at 12 03 48 AM" src="https://user-images.githubusercontent.com/79232961/116648098-3c57e780-a94a-11eb-97ee-4cddbb4c5ed9.png">
+
+![confetti](https://user-images.githubusercontent.com/79232961/116648106-3eba4180-a94a-11eb-9ee3-56683e6b8608.gif)
+
 
 
 TODO: Show your work
